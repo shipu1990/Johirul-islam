@@ -7,13 +7,13 @@ export default function AboutPage() {
       {/* SECTION 1: Intro Split Layer - Changed items-start to items-end & bumped gap to 12 */}
         <div className="flex flex-col md:flex-row gap-12 items-end mb-16 w-full">
         
-        {/* Profile Image Frame */}
-        <div className="w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden grayscale contrast-[1.15] brightness-[0.95] border border-zinc-200 dark:border-zinc-800 flex-shrink-0">
-            <img 
+        {/* Profile Image Frame - Added 'group' to handle the hover state container */}
+        <div className="w-48 h-48 md:w-56 md:h-56 rounded-2xl overflow-hidden border border-zinc-200 dark:border-zinc-800 flex-shrink-0 cursor-pointer group">
+          <img 
             src="/johirul_islam_shipu.jpg" 
             alt="Johirul Islam" 
-            className="w-full h-full object-cover object-[center_22%] scale-110"
-            />
+            className="w-full h-full object-cover object-[center_22%] grayscale contrast-[1.15] brightness-[0.95] transition-all duration-500 ease-out group-hover:grayscale-0 group-hover:scale-105"
+          />
         </div>
 
         {/* Identity Context Block - Removed pt-2 so it naturally aligns to the bottom baseline */}

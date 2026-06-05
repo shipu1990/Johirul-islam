@@ -4,13 +4,14 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center text-center pt-6 pb-12">
       {/* 2. Circular Profile Avatar */}
-      <div className="relative w-28 h-28 mb-10 overflow-hidden rounded-full grayscale bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-800">
+      <div className="relative w-28 h-28 mb-10 overflow-hidden rounded-full bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-800 cursor-pointer group">
         <Image
-          src="/johirul_islam_shipu.jpg" // Replace with your exact image name inside the public folder
+          src="/johirul_islam_shipu.jpg"
           alt="Johirul Islam"
           fill
           priority
-          className="object-cover"
+          sizes="112px"
+          className="object-cover grayscale contrast-[1.15] brightness-[0.95] transition-all duration-500 ease-out group-hover:grayscale-0 group-hover:scale-105"
         />
       </div>
 
