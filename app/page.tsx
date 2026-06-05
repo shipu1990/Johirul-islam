@@ -2,64 +2,64 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <div className="flex flex-col items-center text-center pt-6 pb-12">
+      {/* 2. Circular Profile Avatar */}
+      <div className="relative w-28 h-28 mb-10 overflow-hidden rounded-full grayscale bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-800">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
+          src="/johirul_islam_shipu.jpg" // Replace with your exact image name inside the public folder
+          alt="Johirul Islam"
+          fill
           priority
+          className="object-cover"
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </div>
+
+      {/* 3. Hero Typography Header */}
+      <h1 className="max-w-3xl font-heading text-6xl sm:text-[72px] tracking-tight leading-[1.08] text-zinc-900 dark:text-zinc-50 mb-8">
+        I architect<span className="text-[#a8a29e] font-normal italic"> frontends</span> 
+        <span className="block mt-1 font-normal italic">for complex systems</span>
+      </h1>
+
+      {/* 4. Description Paragraph */}
+      <p className="max-w-xl text-sm sm:text-[15px] leading-relaxed text-zinc-600 dark:text-zinc-400 tracking-wide mb-10 font-normal">
+        7+ years of frontend systems. Deeply passionate about architecting scalable web applications using React, Next.js, and TypeScript. Now helping engineering teams deliver rock-solid frontend infrastructure without the technical debt. No sloppy prop-drilling. No bloated bundles. Codebases that scale.
+      </p>
+
+      {/* 5. Center Content Grid Row Social Links */}
+      <div className="flex items-center gap-6 text-[#a8a29e] dark:text-zinc-500">
+        {/* LinkedIn */}
+        <a href="#" className="hover:text-[#6b6560] dark:hover:text-zinc-300 transition-colors" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+            <rect width="4" height="12" x="2" y="9" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+        </a>
+
+        {/* X / Twitter */}
+        <a href="#" className="hover:text-[#6b6560] dark:hover:text-zinc-300 transition-colors" aria-label="X (Twitter)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+          </svg>
+        </a>
+
+        {/* Facebook */}
+        <a href="#" className="hover:text-[#6b6560] dark:hover:text-zinc-300 transition-colors" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+          </svg>
+        </a>
+
+        {/* Website / Portfolio Globe */}
+        <a href="#" className="hover:text-[#6b6560] dark:hover:text-zinc-300 transition-colors" aria-label="Website">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+            <path d="M2 12h20" />
+          </svg>
+        </a>
+      </div>
     </div>
   );
 }
