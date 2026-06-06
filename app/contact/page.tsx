@@ -2,15 +2,16 @@ import Link from 'next/link';
 
 export default function ContactPage() {
   return (
-    <div className="pt-8 max-w-3xl animate-fade-in">
+    /* Added responsive side margins (px-4), center layout alignment (mx-auto), and clean base bottom padding */
+    <div className="pt-8 max-w-3xl mx-auto animate-fade-in px-4 pb-24">
       
       {/* Upper Category Track Label */}
       <p className="text-[11px] uppercase tracking-[0.15em] font-semibold text-zinc-400 dark:text-zinc-500 mb-3">
         Contact
       </p>
 
-      {/* Large Display Title */}
-      <h1 className="font-heading text-5xl sm:text-6xl tracking-tight text-zinc-900 dark:text-zinc-50 mb-6">
+      {/* Large Display Title - Ensured scale works elegantly everywhere */}
+      <h1 className="font-heading text-4xl sm:text-6xl tracking-tight text-zinc-900 dark:text-zinc-50 mb-6">
         Let’s talk.
       </h1>
 
@@ -53,9 +54,10 @@ export default function ContactPage() {
             <h3 className="text-[11px] uppercase tracking-[0.12em] font-semibold text-zinc-400 dark:text-zinc-500 mb-3">
               Email
             </h3>
+            {/* Added block layout and word-break rules to prevent email text clipping on mobile viewports */}
             <a 
               href="mailto:shipu.johirul2023@gmail.com" 
-              className="font-medium text-zinc-950 dark:text-zinc-50 hover:opacity-70 transition-opacity text-[15px]"
+              className="block font-medium text-zinc-950 dark:text-zinc-50 hover:opacity-70 transition-opacity text-[15px] break-words"
             >
               shipu.johirul2023@gmail.com
             </a>

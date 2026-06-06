@@ -8,65 +8,66 @@ interface Project {
   engineering: string;
   result: string;
   link?: string;
-  // Senior Designer layout patch: Explicit unique colors per item
   badgeStyle: string; 
 }
 
 const PROJECTS_DATA: Project[] = [
   {
-    title: "GreenDelta Insurance Module",
-    category: "Website, E-Commerce",
-    role: "Lead Frontend Architect",
-    architecture: "Mediator Pattern, Proxy Pattern, Finite State Machines (FSM)",
-    engineering: "Structured a transactional checkout pipeline employing the mediator pattern to coordinate complex cart logic, utilizing a proxy pattern for runtime validation and an isolated finite state machine for multi-tiered insurance steps.",
-    result: "Replaced error-prone legacy cart states with a completely deterministic, lightweight user flow that maximized code maintainability and decreased checkout abandonment.",
-    link: "#",
-    badgeStyle: "bg-emerald-50 text-emerald-600 dark:bg-emerald-950/40 dark:text-emerald-400"
-  },
-  {
-    title: "Cave Door SaaS Engine",
-    category: "Enterprise Cloud Application",
-    role: "Senior Frontend Developer",
-    architecture: "Micro-Frontends, Monorepo Architecture, Clean Architecture",
-    engineering: "Decoupled highly dependent business views into domain-driven workspaces. Developed a strict core communication layer powered by event-driven message paths to guarantee completely isolated module deployments.",
-    result: "Cut continuous integration deployment times down significantly while allowing autonomous teams to ship updates without runtime dependencies or collision risks.",
+    title: "Cave Door SaaS Platform",
+    category: "SaaS Platform",
+    role: "Senior Frontend Engineer",
+    architecture: "Custom Hooks Pattern, Observer Pattern, Adapter Pattern, Controlled/Uncontrolled Components",
+    engineering: "Built a real-time data ingestion portal using isolated custom hooks for state machine transitions, employing an internal observer pattern for stream updates and an adapter pattern to normalize Meta Graph API payloads.",
+    result: "Achieved strict separation of concerns within a highly asynchronous data ecosystem, enabling smooth graph rendering and bulletproof error boundaries.",
     badgeStyle: "bg-blue-50 text-blue-600 dark:bg-blue-950/40 dark:text-blue-400"
   },
-  {
+   {
     title: "Dennemeyer UI Library",
-    category: "Design System, Tooling",
-    role: "Frontend Engineer / Lead Tooling",
-    architecture: "Atomic Design, Component-Driven Development, Zero-Runtime CSS",
-    engineering: "Architected and distributed a unified component system engineered with highly accessible headless primitives. Enforced strict token rules and layout boundaries via custom-linted build hooks.",
-    result: "Unified visual continuity across 4 disparate enterprise application suites, reducing initial feature layout timelines for product teams from days to hours.",
+    category: "System, Docs",
+    role: "Senior Frontend Engineer",
+    architecture: "Atomic Design Pattern, Render Props, Singleton Pattern, Higher-Order Components (HOC)",
+    engineering: "Constructed a robust corporate design ecosystem using the atomic design pattern, introducing flexible layout customizations via render props and injecting accessibility (WCAG) criteria using structural HOCs.",
+    result: "Created an accessible, bulletproof component library that minimized layout regressions and served as a single, maintainable source of truth across development teams.",
     badgeStyle: "bg-amber-50 text-amber-700 dark:bg-amber-950/40 dark:text-amber-400"
   },
   {
-    title: "Dhaka Bank Digital Platform",
-    category: "Financial Systems, Banking",
-    role: "Senior Application Developer",
-    architecture: "Command Query Responsibility Segregation (CQRS) Client Layer, Web Crypto API",
-    engineering: "Engineered secure client-side transaction ledgers utilizing state persistence layers. Wrapped balance checks and sensitive workflows in strict cryptographic filters directly at the client layer.",
-    result: "Eliminated out-of-order component updates during sporadic networks and maintained rock-solid security profiles adhering to modern regional compliance audits.",
+    title: "Dhaka Bank Credit Card Platform",
+    category: "Website, App",
+    role: "Senior Frontend Engineer",
+    architecture: "Component-Driven Architecture, Compound Components, Facade Pattern, State Hoisting",
+    engineering: "Developed a multi-step onboarding funnel using compound components to isolate heavy form logic, abstracting API communications behind a unified data facade while maintaining step progression via strict state hoisting.",
+    result: "Delivered a modular, secure platform that separated presentation from business rules, drastically accelerating form rendering times and runtime stability.",
     badgeStyle: "bg-indigo-50 text-indigo-600 dark:bg-indigo-950/40 dark:text-indigo-400"
   },
   {
-    title: "Atlas Design Engine",
-    category: "Graphics, Web Graphics Vector Editor",
-    role: "Systems Architect",
-    architecture: "Command Pattern, Quadtree Spatial Indexing, Canvas Optimization",
-    engineering: "Designed a multi-level structural undo/redo layer using command design implementations. Integrated quadtree canvas algorithms to optimize point-intersection collision hits over thousands of canvas elements.",
-    result: "Achieved ultra-smooth rendering performance clocks at 60 FPS under massive vector stress loads without layout drops or browser memory compilation leaks.",
-    badgeStyle: "bg-rose-50 text-rose-600 dark:bg-rose-950/40 dark:text-rose-400"
+    title: "NRB Bank Onboarding Platform",
+    category: "Website, Onboarding",
+    role: "Senior Frontend Engineer",
+    architecture: "Strategy Pattern, Provider Pattern, Container-Presentational Pattern, Memoization",
+    engineering: "Fabricated a scalable KYC validation module leveraging the strategy pattern to dynamically switch validation rules, distributing global identity states through the provider pattern while keeping views decoupled.",
+    result: "Engineered an elastic, low-latency financial platform capable of processing secure verification pipelines with zero unnecessary component re-renders.",
+    badgeStyle: "bg-sky-50 text-sky-600 dark:bg-sky-950/40 dark:text-sky-400"
   },
+  
   {
-    title: "Vanguard Supply Chain Core",
-    category: "Logistics, Analytics Portal",
-    role: "Frontend Team Lead",
-    architecture: "Reactive Extensions (RxJS), Event Sourcing, Virtualized Grid Layouts",
-    engineering: "Configured highly performant telemetry ingestion modules utilizing stream pipe transformations. Bound updates natively onto virtualized rows to securely manage live layout refreshes.",
-    result: "Successfully enabled logistics managers to analyze complex multi-stop routes live without pinning or stalling browser processes or main script threads.",
+    title: "LankaBangla Finance Portal",
+    category: "Website, ECRM",
+    role: "Senior Frontend Engineer",
+    architecture: "Repository Pattern, Factory Pattern, Pub-Sub Architecture, Single Responsibility Principle",
+    engineering: "Designed an enterprise-grade analytics dashboard that decoupled network layers using the repository pattern, generated chart instances dynamically via a factory pattern, and isolated event streaming with pub-sub.",
+    result: "Unified scattered data streams into a single performant data hub, allowing teams to append new analytics configurations without mutating core UI shells.",
     badgeStyle: "bg-violet-50 text-violet-600 dark:bg-violet-950/40 dark:text-violet-400"
+  },
+ 
+  {
+    title: "GreenDelta Insurance Module",
+    category: "Website, E-Commerce",
+    role: "Frontend Developer",
+    architecture: "Mediator Pattern, Proxy Pattern, Finite State Machines (FSM), Clean Architecture",
+    engineering: "Structured a transactional checkout pipeline employing the mediator pattern to coordinate complex cart logic, utilizing a proxy pattern for runtime validation and a finite state machine for multi-tiered insurance steps.",
+    result: "Replaced error-prone legacy cart states with a deterministic, lightweight user flow that maximized code maintainability and decreased checkout abandonment.",
+    link: "#",
+    badgeStyle: "bg-emerald-50 text-emerald-600 dark:bg-emerald-950/40 dark:text-emerald-400"
   }
 ];
 
@@ -75,7 +76,7 @@ export default function ProjectsPage() {
     <div className="pt-8 max-w-4xl mx-auto animate-fade-in pb-24 px-4">
       
       {/* Page Header Section */}
-      <div className="mb-20">
+      <div className="mb-16 md:mb-20">
         <p className="text-[11px] uppercase tracking-[0.15em] font-semibold text-zinc-400 dark:text-zinc-500 mb-2">
           Projects
         </p>
@@ -94,12 +95,12 @@ export default function ProjectsPage() {
         {PROJECTS_DATA.map((project, idx) => (
           <div 
             key={idx} 
-            className="py-14 border-b border-zinc-200 dark:border-zinc-800/60 grid grid-cols-1 md:grid-cols-12 gap-12 items-start group hover:bg-zinc-50/30 dark:hover:bg-zinc-950/5 transition-colors duration-200 -mx-4 px-4 rounded-xl"
+            className="py-10 md:py-14 border-b border-zinc-200 dark:border-zinc-800/60 grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-start group hover:bg-zinc-50/30 dark:hover:bg-zinc-950/5 transition-colors duration-200 rounded-xl sm:-mx-4 sm:px-4"
           >
             {/* Left Column: Category Info, Title, & Spaced Metadata Info */}
-            <div className="md:col-span-5 space-y-6">
+            <div className="md:col-span-5 space-y-4 md:space-y-6">
               
-              {/* Colorful, individual backgrounds applied directly below dynamically */}
+              {/* Category Badge & Label */}
               <div className="flex items-center gap-2.5">
                 <span className={`font-mono text-[11px] font-semibold px-2.5 py-0.5 rounded-[4px] tracking-normal ${project.badgeStyle}`}>
                   0{idx + 1}
@@ -121,7 +122,7 @@ export default function ProjectsPage() {
                 )}
               </h3>
 
-              {/* Metadata Stack - Safe Block Layout (No Overlaps) */}
+              {/* Metadata Stack - Safe Block Layout */}
               <div className="space-y-4 pt-1 text-[15px]">
                 <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
                   <span className="text-zinc-400 dark:text-zinc-500 w-28 shrink-0 font-medium">Role:</span>

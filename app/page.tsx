@@ -2,7 +2,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center text-center pt-6 pb-12">
+    /* Added responsive page padding (px-4) to protect phone screen edges */
+    <div className="flex flex-col items-center text-center pt-10 sm:pt-16 pb-12 px-4 max-w-4xl mx-auto">
+      
       {/* 2. Circular Profile Avatar */}
       <div className="relative w-28 h-28 mb-10 overflow-hidden rounded-full bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-800 cursor-pointer group">
         <Image
@@ -15,10 +17,10 @@ export default function Home() {
         />
       </div>
 
-      {/* 3. Hero Typography Header */}
-      <h1 className="max-w-3xl font-heading text-6xl sm:text-[72px] tracking-tight leading-[1.08] text-zinc-900 dark:text-zinc-50 mb-8">
+      {/* 3. Hero Typography Header - Debugged for Mobile Text Scaling */}
+      <h1 className="max-w-3xl font-heading text-4xl sm:text-5xl md:text-[72px] tracking-tight leading-[1.15] md:leading-[1.08] text-zinc-900 dark:text-zinc-50 mb-8">
         I architect<span className="text-[#a8a29e] font-normal italic"> frontends</span> 
-        <span className="block mt-1 font-normal italic">for complex systems</span>
+        <span className="block sm:inline md:block mt-1 font-normal italic"> for complex systems</span>
       </h1>
 
       {/* 4. Description Paragraph */}
